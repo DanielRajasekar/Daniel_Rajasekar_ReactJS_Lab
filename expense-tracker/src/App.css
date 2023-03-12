@@ -1,0 +1,205 @@
+body{
+  height: 100%;
+  width: 100%;
+  background-color: darkgray
+  /* background-color: rgb(253, 243, 223); */
+}
+header{
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+  background-color: rgb(9, 9, 9);
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(7, 143, 192);
+}
+footer{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+p, h1{
+  padding: 10px;
+  margin: 0%;
+}
+section{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+}
+article{
+  min-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(10, 97, 168);
+  background-color: rgb(213, 186, 186);
+
+}
+input{
+  width: 300px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(5, 5, 5);
+  height: 30px;
+}
+input, label, p, #district{
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-button{
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  font-size: x-large;
+  font-weight: bolder;
+  float: right;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(10, 10, 9);
+  color: rgb(28, 177, 236);
+}
+#district{
+  height: 50px;
+}
+/* combinator selector */
+header p{
+  text-align: left;
+}
+article p{
+  font-weight: bold;
+  font-family: Helvetica ;
+  letter-spacing: 2px;
+}
+
+/* pseudo class selector */
+input:focus{
+  outline: none;
+  background-color: gainsboro;
+}
+
+/* pseudo element selector */
+header p::first-line{
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.582);
+}
+article p::after{
+  content: "*";
+  color: red;
+}
+/* attribute selector */
+input[name^="option"]{
+  width: 20px;
+  height: 20px;
+}
+
+#Add-button {
+  font-size: xx-large;
+  padding: 15px;
+  width: 8%;
+  height: 8%;
+  background-color: rgba(128, 255, 0, 0.893);
+  float: right;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  top: 90px;
+  right: 50px;
+}
+.use-inline {
+  width: 25%;
+  font-size: x-large;
+  padding: 20px;
+  margin: 5px 5px;
+  display: inline-block;
+  background-color: rgb(220, 6, 6);
+  border-radius: 5px;
+}
+.Total{
+  background-color: darkblue;
+  color: white;
+}
+.Paid{
+  background-color: darkslategray;
+  color: white;
+}
+.date {
+  text-align: center;
+  width: 12%;
+  background-color: rgb(0, 110, 255);
+  color: black;
+}
+.date1{
+  background-color: rgb(0, 37, 75);
+  color: aliceblue;
+}
+
+.price {
+  width: 10%;
+  background-color: rgb(0, 110, 255);
+}
+.total {
+  width: auto;
+  font-size: xx-large;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(10, 253, 172);
+}
+.Ramesh, .Rahul {
+  width: 10%;
+}
+.Rahul {
+  background-color: rgb(44, 235, 219);
+}
+.Ramesh {
+  background-color: cadetblue;
+}
+.form {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(74, 32, 32, 0.452);
+}
+.payable {
+  background-color: rgba(255, 0, 0, 0.63);
+ font-size: 30px;
+}
+/* .App {
+  width: 1200px;
+  min-width: 100%;
+  overflow-x: auto;
+} */
+.header-color {
+  color: rgb(190, 0, 0);
+  background-color: rgb(2, 2, 2);
+}
+.payeeName{
+  background-color: rgb(16, 71, 71);
+  color: white;
+}
+@media (max-width:940px ) {
+  header{
+    max-width: 900px;
+  }
+  .use-inline {
+    width: 150px;
+    font-size: x-large;
+    padding: 20px;
+    margin: 5px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: larger;
+  }
+  .date {
+    width: 10%;
+  }
+  #Add-button {
+    font-size: larger;
+    padding: 10px;
+    right: 20px;
+  }
+  }
